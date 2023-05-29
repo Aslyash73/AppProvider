@@ -96,7 +96,7 @@ class CustomButton extends StatelessWidget {
         child: InkWell(
           focusColor: colors.error,
           onTap: () {},
-          child: Padding(
+          child: const Padding(
               padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               child: Text('Hola Mundo', style: TextStyle(color: Colors.white))),
         ),
