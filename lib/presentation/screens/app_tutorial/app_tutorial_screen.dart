@@ -28,16 +28,16 @@ final slides = <SlideInfo>[
   ),
 ];
 
-class TutorialScreen extends StatefulWidget {
+class infiniteScreen extends StatefulWidget {
   static const name = 'tutorial_screen';
 
-  const TutorialScreen({Key? key}) : super(key: key);
+  const infiniteScreen({Key? key}) : super(key: key);
 
   @override
-  State<TutorialScreen> createState() => _TutorialScreenState();
+  State<infiniteScreen> createState() => _infiniteScreenState();
 }
 
-class _TutorialScreenState extends State<TutorialScreen> {
+class _infiniteScreenState extends State<infiniteScreen> {
   late final PageController pageviewController = PageController();
   bool endReached = false;
   int currentPage = 0;

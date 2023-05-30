@@ -7,6 +7,7 @@ import 'package:widgets_app/presentation/screens/snackbar/snackbar_screen.dart';
 
 import '../../presentation/screens/animated/animated_screen.dart';
 import '../../presentation/screens/app_tutorial/app_tutorial_screen.dart';
+import '../../presentation/screens/infinite_scroll/infinite_scroll_screen.dart';
 import '../../presentation/screens/ui_controls/ui_controls_screen.dart';
 
 // GoRouter configuration
@@ -50,8 +51,13 @@ final appRouter = GoRouter(
     ),
     GoRoute(
       path: '/tutorial',
-      name: TutorialScreen.name,
-      builder: (context, state) => const TutorialScreen(),
+      name: infiniteScreen.name,
+      builder: (context, state) => const infiniteScreen(),
+    ),
+    GoRoute(
+      path: '/infinite',
+      name: InfiniteScrollScreen.name,
+      builder: (context, state) => const InfiniteScrollScreen(),
     ),
   ],
 );
