@@ -9,6 +9,7 @@ import '../../presentation/screens/animated/animated_screen.dart';
 import '../../presentation/screens/app_tutorial/app_tutorial_screen.dart';
 import '../../presentation/screens/counter/counter_screen.dart';
 import '../../presentation/screens/infinite_scroll/infinite_scroll_screen.dart';
+import '../../presentation/screens/theme_change/theme_change_screen.dart';
 import '../../presentation/screens/ui_controls/ui_controls_screen.dart';
 
 // GoRouter configuration
@@ -64,6 +65,11 @@ final appRouter = GoRouter(
       path: '/counter',
       name: CounterScreen.name,
       builder: (context, state) => const CounterScreen(),
+    ),
+    GoRoute(
+      path: '/theme',
+      name: ThemeChangerScreen.name,
+      builder: (context, state) => const ThemeChangerScreen(),
     ),
   ],
 );
